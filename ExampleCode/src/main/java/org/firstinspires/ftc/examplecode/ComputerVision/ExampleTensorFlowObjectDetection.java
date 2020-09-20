@@ -61,12 +61,7 @@ public class ExampleTensorFlowObjectDetection extends OpMode {
         // The TFObjectDetector uses the camera frames from the VuforiaLocalizer, so we create that
         // first.
         initVuforia();
-
-        if (ClassFactory.getInstance().canCreateTFObjectDetector()) {
-            initTfod();
-        } else {
-            telemetry.addData("Sorry!", "This device is not compatible with TFOD");
-        }
+        initTfod();
 
         /** Wait for the game to begin */
         telemetry.addData(">", "Press Play to start tracking");
