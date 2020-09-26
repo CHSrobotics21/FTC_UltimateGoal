@@ -68,6 +68,7 @@ public class BasicOpMode_Linear extends LinearOpMode {
 
             // Show the elapsed game time.
             telemetry.addData("Status", "Run Time: " + runtime.toString());
+            telemetry.addData("Status2", "Count Down: " + runtime.toString());
             telemetry.update();
         }
     }
